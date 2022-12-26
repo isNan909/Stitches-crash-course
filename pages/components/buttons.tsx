@@ -2,12 +2,20 @@ import { styled } from "@stitches/react";
 
 export const Button = styled("button", {
   // base styles
-  display: "block",
+  display: "flex",
   border: "none",
   borderRadius: "5px",
   color: "$whiteColor",
   cursor: "pointer",
   backgroundColor: "none",
+  alignItems: "center",
+
+
+  "& svg": {
+    width: "25px",
+    height: "25px",
+    marginLeft: "10px",
+  },
 
   variants: {
     size: {

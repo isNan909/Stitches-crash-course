@@ -2,6 +2,8 @@ import Head from "next/head";
 
 import Navbar from "../pages/components/navbar";
 import Mainbanner from "../pages/components/main-banner";
+import TeamsBox from "../pages/components/teams";
+import Heroimage from "../pages/components/heroimage"
 
 export default function Home() {
   return (
@@ -15,6 +17,8 @@ export default function Home() {
       <main>
         <Navbar />
         <Mainbanner />
+        <TeamsBox />
+        <Heroimage />
       </main>
     </>
   );

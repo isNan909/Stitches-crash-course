@@ -6,6 +6,7 @@ export const ResponsiveContainer = styled("div", {
   maxWidth: "72rem",
   paddingLeft: "1.75rem",
   paddingRight: "1.75rem",
+  position: "relative",
   // "@bp1": { paddingLeft: "1.75rem", paddingRight: "1.75rem" },
   // "@bp2": { paddingLeft: "1.75rem", paddingRight: "1.75rem" },
 });
