@@ -4,9 +4,17 @@ import { Box } from "../components/box";
 import { MacOSIcon } from "./../assets/macos";
 
 const AvailableForStyles = styled({
-  alignItems: "center",
-  display: "flex",
-  marginBottom: "96px",
+  ".wrapper": {
+    position: "relative",
+    backgroundColor: "$mildWhite",
+    zIndex: "-1",
+    alignItems: "center",
+    display: "flex",
+    paddingBottom: "6rem",
+    "@sm": {
+      padding: "0rem 0rem 3rem 0rem",
+    },
+  },
   ".available-content": {
     backgroundColor: "$grey100",
     padding: "30px",
@@ -50,37 +58,39 @@ const AvailableForStyles = styled({
 export default function AvailableFor() {
   return (
     <AvailableForStyles>
-      <ResponsiveContainer>
-        <div className="available">
-          <section>
-            <div className="available-content">
-              <p>Available for</p>
-              <ul>
-                <li>
-                  <MacOSIcon />
-                  <span>MacOS</span>
-                </li>
-                <li>
-                  <MacOSIcon />
-                  <span>MacOS</span>
-                </li>
-                <li>
-                  <MacOSIcon />
-                  <span>MacOS</span>
-                </li>
-                <li>
-                  <MacOSIcon />
-                  <span>MacOS</span>
-                </li>
-                <li>
-                  <MacOSIcon />
-                  <span>MacOS</span>
-                </li>
-              </ul>
-            </div>
-          </section>
-        </div>
-      </ResponsiveContainer>
+      <div className="wrapper">
+        <ResponsiveContainer>
+          <div className="available">
+            <section>
+              <div className="available-content">
+                <p>Available for</p>
+                <ul>
+                  <li>
+                    <MacOSIcon />
+                    <span>MacOS</span>
+                  </li>
+                  <li>
+                    <MacOSIcon />
+                    <span>MacOS</span>
+                  </li>
+                  <li>
+                    <MacOSIcon />
+                    <span>MacOS</span>
+                  </li>
+                  <li>
+                    <MacOSIcon />
+                    <span>MacOS</span>
+                  </li>
+                  <li>
+                    <MacOSIcon />
+                    <span>MacOS</span>
+                  </li>
+                </ul>
+              </div>
+            </section>
+          </div>
+        </ResponsiveContainer>
+      </div>
     </AvailableForStyles>
   );
 }

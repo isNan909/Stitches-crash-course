@@ -42,7 +42,7 @@ export const Button = styled("button", {
         },
       },
       ghost: {
-        backgroundColor: "$whiteColor",
+        backgroundColor: "transparent",
         border: "none",
         color: "$blueDarker",
         "&:hover": {

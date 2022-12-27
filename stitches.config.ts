@@ -57,6 +57,9 @@ export const { styled, getCssText, css } = createStitches({
 
 export const globalStyles = globalCss({
   "*, *::before, *::after": { boxSizing: "border-box" },
+  "body": {
+    backgroundColor: "#ffffff",
+  },
   "body, h1, h2, h3, h4, p, figure, blockquote, dl, dd": {
     margin: 0,
   },

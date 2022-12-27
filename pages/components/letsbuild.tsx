@@ -6,14 +6,20 @@ import { Box } from "../components/box";
 import { BlueCircle } from "./../assets/bluecircle";
 
 const LetsBuild = styled({
-  position: "relative",
-  backgroundColor: "$mildWhite",
+  ".wrapper": {
+    position: "relative",
+    backgroundColor: "$mildWhite",
+    zIndex: "-1",
+  },
   ".build": {
     alignItems: "center",
     display: "flex",
     justifyContent: "center",
     textAlign: "center",
     padding: "6rem 0rem",
+    "@sm": {
+      padding: "3rem 0rem",
+    },
   },
   ".build-circles": {
     position: "absolute",
@@ -60,9 +66,12 @@ const LetsBuild = styled({
     gridColumnGap: "5px",
     gridRowGap: "5px",
     alignItems: "center",
-    paddingBottom: "0px 32px",
+    padding: "48px 32px",
     "@md": {
       gridTemplateColumns: "1fr",
+    },
+    "@sm": {
+      padding: "0rem 0rem",
     },
   },
   ".build-logos": {
@@ -160,7 +169,7 @@ const LetsBuild = styled({
     },
   },
   ".build-networks__diagram": {
-    "img": {
+    img: {
       width: "100%",
     },
   },
@@ -169,72 +178,74 @@ const LetsBuild = styled({
 export default function LetsBuildSection() {
   return (
     <LetsBuild>
-      <ResponsiveContainer>
-        <div className="build">
-          <section>
-            <div className="build-heading">
-              <h2>Let's build your virtual network</h2>
-              <p>
-                Create a secure WireGuard® mesh network between your devices,
-                virtual machines, and servers — even when they're separated by
-                firewalls or subnets.
-              </p>
-            </div>
-            <div className="build-logos">
-              <ul>
-                <li>
-                  <img
-                    src="https://tailscale.com/files/images/cloud/aws.svg"
-                    alt="aws logo"
-                  />
-                </li>
-                <li>
-                  <img
-                    src="https://tailscale.com/files/images/cloud/azure.svg"
-                    alt="azure logo"
-                  />
-                </li>
-                <li>
-                  <img
-                    src="https://tailscale.com/files/images/cloud/gcp.svg"
-                    alt="Google Cloud Platform"
-                  />
-                </li>
-              </ul>
-            </div>
-            <div className="build-networks">
-              <div className="build-networks__tabs">
+      <div className="wrapper">
+        <ResponsiveContainer>
+          <div className="build">
+            <section>
+              <div className="build-heading">
+                <h2>Let's build your virtual network</h2>
+                <p>
+                  Create a secure WireGuard® mesh network between your devices,
+                  virtual machines, and servers — even when they're separated by
+                  firewalls or subnets.
+                </p>
+              </div>
+              <div className="build-logos">
                 <ul>
-                  <li className="active">
-                    <h4>With Tailscale</h4>
-                    <p>
-                      Rolls out in minutes. Devices connect directly, working
-                      from any physical location or networking environment. All
-                      without poking holes in your firewall.
-                    </p>
+                  <li>
+                    <img
+                      src="https://tailscale.com/files/images/cloud/aws.svg"
+                      alt="aws logo"
+                    />
                   </li>
                   <li>
-                    <h4>Without Tailscale</h4>
-                    <p>
-                      A frustratingly complex and brittle collection of
-                      firewalls, rules, and holes while wondering if your
-                      network is secure enough.
-                    </p>
+                    <img
+                      src="https://tailscale.com/files/images/cloud/azure.svg"
+                      alt="azure logo"
+                    />
+                  </li>
+                  <li>
+                    <img
+                      src="https://tailscale.com/files/images/cloud/gcp.svg"
+                      alt="Google Cloud Platform"
+                    />
                   </li>
                 </ul>
               </div>
-              <div className="build-networks__diagram">
-                <img
-                  src="https://tailscale.com/files/images/marketing/home-network-after.svg"
-                  alt="before tailscale"
-                />
+              <div className="build-networks">
+                <div className="build-networks__tabs">
+                  <ul>
+                    <li className="active">
+                      <h4>With Tailscale</h4>
+                      <p>
+                        Rolls out in minutes. Devices connect directly, working
+                        from any physical location or networking environment.
+                        All without poking holes in your firewall.
+                      </p>
+                    </li>
+                    <li>
+                      <h4>Without Tailscale</h4>
+                      <p>
+                        A frustratingly complex and brittle collection of
+                        firewalls, rules, and holes while wondering if your
+                        network is secure enough.
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+                <div className="build-networks__diagram">
+                  <img
+                    src="https://tailscale.com/files/images/marketing/home-network-after.svg"
+                    alt="before tailscale"
+                  />
+                </div>
               </div>
-            </div>
-          </section>
+            </section>
+          </div>
+        </ResponsiveContainer>
+        <div className="build-circles">
+          <BlueCircle />
         </div>
-      </ResponsiveContainer>
-      <div className="build-circles">
-        <BlueCircle />
       </div>
     </LetsBuild>
   );

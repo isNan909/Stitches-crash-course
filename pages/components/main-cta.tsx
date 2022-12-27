@@ -34,7 +34,7 @@ const MainActionStyles = styled({
 			color: "$grey400",
 			margin: "0px",
 			paddingBottom: "32px",
-      "@sm": { fontSize: "$5" },
+      "@sm": { fontSize: "$6" },
 		}
   },
 });

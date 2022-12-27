@@ -6,7 +6,8 @@ import { Button } from "../components/buttons";
 
 const BannerSection = styled({
   ".banner": {
-    margin: "90px 0px",
+    margin: "96px 0px",
+    "@md": { margin: "64px 0px", },
 		"h1": {
 			fontSize: "$1",
 			margin: "0",

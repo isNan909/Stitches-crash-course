@@ -13,12 +13,13 @@ const NavigationBar = styled({
     alignItems: "center",
     fontSize: "$6",
     justifyContent: "space-between",
-    "@sm": { padding: "10px 0px" },
+    paddingTop: "30px",
+    "@sm": { padding: "20px 0px" },
   },
   ".navbar-logo": {
     ".navbar-logo__anchors": {
       "@sm": { display: "none" },
-      marginLeft: "15px",
+      marginLeft: "35px",
     },
     "ul, li": {
       display: "flex",
