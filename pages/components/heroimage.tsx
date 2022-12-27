@@ -11,11 +11,20 @@ const HeroImage = styled({
     width: "100%",
     alignItems: "center",
   },
-	".image-device_circles": {
-		position: "absolute",
-		left: "-15%",
-		translate: "0 20%"
-	}
+  ".image-device_circles": {
+    position: "absolute",
+    left: "-15%",
+    translate: "0 20%",
+    "@sm": {
+      display: "none",
+    },
+    svg: {
+      "@md": {
+        width: "160px",
+        height: "auto",
+      },
+    },
+  },
 });
 
 export default function Heroimage() {
@@ -31,7 +40,7 @@ export default function Heroimage() {
               />
             </div>
             <div className="image-device_circles">
-              <YellowCircle/>
+              <YellowCircle />
             </div>
           </Box>
         </section>

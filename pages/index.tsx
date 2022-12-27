@@ -20,7 +20,7 @@ export default function Home() {
       </Head>
       <main>
         <Navbar />
-        <Mainbanner />
+        <Mainbanner /> 
         <TeamsBox />
         <Heroimage />
         <LetsBuildSection />

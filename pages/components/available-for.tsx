@@ -23,6 +23,9 @@ const AvailableForStyles = styled({
       display: "flex",
       justifyContent: "center",
       gap: "40px",
+      "@sm": {
+        flexWrap: "wrap",
+      },
     },
     "ul li": {
       listStyle: "none",
@@ -52,30 +55,28 @@ export default function AvailableFor() {
           <section>
             <div className="available-content">
               <p>Available for</p>
-              <div className="available-content__logos">
-                <ul>
-                  <li>
-                    <MacOSIcon />
-                    <span>MacOS</span>
-                  </li>
-                  <li>
-                    <MacOSIcon />
-                    <span>MacOS</span>
-                  </li>
-                  <li>
-                    <MacOSIcon />
-                    <span>MacOS</span>
-                  </li>
-                  <li>
-                    <MacOSIcon />
-                    <span>MacOS</span>
-                  </li>
-                  <li>
-                    <MacOSIcon />
-                    <span>MacOS</span>
-                  </li>
-                </ul>
-              </div>
+              <ul>
+                <li>
+                  <MacOSIcon />
+                  <span>MacOS</span>
+                </li>
+                <li>
+                  <MacOSIcon />
+                  <span>MacOS</span>
+                </li>
+                <li>
+                  <MacOSIcon />
+                  <span>MacOS</span>
+                </li>
+                <li>
+                  <MacOSIcon />
+                  <span>MacOS</span>
+                </li>
+                <li>
+                  <MacOSIcon />
+                  <span>MacOS</span>
+                </li>
+              </ul>
             </div>
           </section>
         </div>

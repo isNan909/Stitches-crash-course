@@ -20,6 +20,9 @@ const IdentityProviders = styled({
     h2: {
       fontSize: "$2",
       fontWeight: "$normal",
+      "@md": {
+        fontSize: "$3",
+      },
     },
     p: {
       maxWidth: "576px",
@@ -27,6 +30,9 @@ const IdentityProviders = styled({
       fontSize: "$4",
       lineHeight: "28px",
 			fontWeight: "$light",
+      "@sm": {
+        fontSize: "$5",
+      },
     },
   },
   ".identity-logos": {
@@ -39,6 +45,9 @@ const IdentityProviders = styled({
       paddingTop: "48px",
       paddingBottom: "32px",
       gap: "20px",
+      "@md": {
+        flexWrap: "wrap",
+      },
     },
     "ul li": {
       listStyle: "none",

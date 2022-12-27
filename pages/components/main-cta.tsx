@@ -15,6 +15,7 @@ const MainActionStyles = styled({
     alignItems: "center",
     justifyContent: "center",
 		gap: "20px",
+    "@sm": { flexWrap: "wrap", },
   },
   ".cta": {
     display: "flex",

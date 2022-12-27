@@ -13,25 +13,40 @@ const LetsBuild = styled({
     display: "flex",
     justifyContent: "center",
     textAlign: "center",
-		padding: "96px 0px",
+    padding: "6rem 0rem",
   },
   ".build-circles": {
     position: "absolute",
     right: "0",
     top: "0",
+    zIndex: "-1",
+    svg: {
+      "@md": {
+        width: "200px",
+      },
+    },
+    "@sm": {
+      display: "none",
+    },
   },
   ".build-heading": {
     margin: "auto",
     h2: {
       fontSize: "$2",
       fontWeight: "$normal",
+      "@md": {
+        fontSize: "$3",
+      },
     },
     p: {
       fontSize: "$4",
       maxWidth: "536px",
       lineHeight: "28px",
       color: "$grey400",
-			margin: "auto",
+      margin: "auto",
+      "@sm": {
+        fontSize: "$5",
+      },
     },
   },
   ".build-networks": {
@@ -41,19 +56,22 @@ const LetsBuild = styled({
     gridColumnGap: "5px",
     gridRowGap: "5px",
     alignItems: "center",
-		paddingBottom: "0px 32px",
+    paddingBottom: "0px 32px",
+    "@md": {
+      gridTemplateColumns: "1fr",
+    },
   },
   ".build-logos": {
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
-		paddingTop: "48px",
-		paddingBottom: "32px",
+    paddingTop: "48px",
+    paddingBottom: "32px",
     ul: {
       listStyle: "none",
-			display: "flex",
-			alignItems: "center",
-			gap: "30px",
+      display: "flex",
+      alignItems: "center",
+      gap: "30px",
     },
     "ul li": {
       listStyle: "none",
@@ -78,15 +96,26 @@ const LetsBuild = styled({
   ".build-networks__tabs": {
     justifyContent: "start",
     display: "flex",
+    ul: {
+      "@md": {
+        display: "flex",
+      },
+      "@sm": {
+        flexWrap: "wrap",
+      },
+    },
     "ul li": {
       listStyle: "none",
       textAlign: "left",
       margin: "40px 0px",
       padding: "0px 0px 0px 20px",
+      "@md": {
+        padding: "0px 20px 0px 20px",
+      },
     },
     "li.active": {
       borderLeft: "3px solid $orangeDark",
-			h4: {
+      h4: {
         color: "$orangeDark",
       },
     },
@@ -96,10 +125,18 @@ const LetsBuild = styled({
     h4: {
       fontSize: "$4",
       fontWeight: "$normal",
+      margin: "0px",
+      paddingBottom: "5px",
     },
     p: {
-      fontColor: "$grey400",
       fontSize: "$6",
+      lineHeight: "28px",
+      color: "$grey400",
+    },
+  },
+  ".build-networks__diagram": {
+    "img": {
+      width: "100%",
     },
   },
 });

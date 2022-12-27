@@ -10,7 +10,8 @@ const BannerSection = styled({
 		"h1": {
 			fontSize: "$1",
 			margin: "0",
-			fontWeight: "$normal"
+			fontWeight: "$normal",
+      "@md": { fontSize: "$2", },
 		},
 		"p": {
 			fontSize: "$4",
@@ -18,7 +19,8 @@ const BannerSection = styled({
 			padding: "16px 40px 40px 0px",
 			margin: "0px",
 			maxWidth: "42rem",
-			lineHeight: "1.75rem"
+			lineHeight: "1.75rem",
+      "@md": { fontSize: "$5", },
 		},
   },
   ".banner-buttons": {
@@ -29,6 +31,7 @@ const BannerSection = styled({
     alignItems: "center",
     textAlign: "center",
     justifyContent: "center",
+    "@sm": { flexWrap: "wrap", },
   },
 });
 

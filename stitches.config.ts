@@ -1,4 +1,4 @@
-import { createStitches } from "@stitches/react";
+import { createStitches, globalCss } from "@stitches/react";
 
 export const { styled, getCssText, css } = createStitches({
   theme: {
@@ -52,5 +52,32 @@ export const { styled, getCssText, css } = createStitches({
     sm: "(max-width: 768px)",
     md: "(max-width: 1024px)",
     lg: "(max-width: 1280px)",
+  },
+});
+
+export const globalStyles = globalCss({
+  "*, *::before, *::after": { boxSizing: "border-box" },
+  "body, h1, h2, h3, h4, p, figure, blockquote, dl, dd": {
+    margin: 0,
+  },
+  "ul[role='list'], ol[role='list']": { listStyle: "none" },
+  "html:focus-within": { scrollBehavior: "smooth" },
+  body: {
+    fontFamily: "Inter",
+    minHeight: "100vh",
+    textRendering: "optimizeSpeed",
+    lineHeight: 1.5,
+  },
+  "a:not([class])": { textDecorationSkipInk: "auto" },
+  "img,picture": { maxWidth: "100%", display: "block" },
+  "input,button,textarea,select": { font: "inherit" },
+  "@media (prefers-reduced-motion: reduce)": {
+    "html:focus-within": { scrollBehavior: "auto" },
+    "*, *::before, *::after": {
+      animationDuration: "0.01ms !important",
+      animationIterationCount: "1 !important",
+      transitionDuration: "0.01ms !important",
+      scrollBehavior: "auto !important",
+    },
   },
 });

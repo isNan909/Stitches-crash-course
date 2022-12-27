@@ -12,9 +12,10 @@ const NavigationBar = styled({
     width: "100%",
     alignItems: "center",
     fontSize: "$6",
+    justifyContent: "space-between",
+    "@sm": { padding: "10px 0px" },
   },
   ".navbar-logo": {
-    flex: "2",
     ".navbar-logo__anchors": {
       "@sm": { display: "none" },
       marginLeft: "15px",

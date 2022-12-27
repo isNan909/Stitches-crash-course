@@ -1,7 +1,7 @@
 export const BlueCircle = () => {
   return (
     <svg
-      width="386"
+      width="311"
       height="207"
       viewBox="0 0 386 207"
       fill="none"

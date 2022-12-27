@@ -19,6 +19,11 @@ const TeamsSection = styled({
     ".team_association ul": {
       display: "flex",
       gap: "30px",
+      "@md": {
+        flexWrap: "wrap",
+        justifyContent: "center",
+        alignItems: "center",
+      },
     },
     "ul li img": {
       objectFit: "contain",
