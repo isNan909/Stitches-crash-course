@@ -11,6 +11,7 @@ const NavigationBar = styled({
     display: "flex",
     width: "100%",
     alignItems: "center",
+    fontSize: "$6",
   },
   ".navbar-logo": {
     flex: "2",

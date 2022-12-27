@@ -13,7 +13,7 @@ const BannerSection = styled({
 			fontWeight: "$normal"
 		},
 		"p": {
-			fontSize: "$3",
+			fontSize: "$4",
 			color: "$grey300",
 			padding: "16px 40px 40px 0px",
 			margin: "0px",

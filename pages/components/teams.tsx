@@ -12,7 +12,7 @@ const TeamsSection = styled({
     span: {
       marginBottom: "24px",
       display: "block",
-      fontSize: "$6",
+      fontSize: "$7",
       color: "$grey200",
       textAlign: "center",
     },

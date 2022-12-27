@@ -5,19 +5,34 @@ import { Button } from "../components/buttons";
 import { Box } from "../components/box";
 
 const MainActionStyles = styled({
-  backgroundColor: "$White",
+  backgroundColor: "$whiteColor",
   margin: "auto",
   textAlign: "center",
+	padding: "96px 0px",
+	display: "block",
   ".cta-buttons": {
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
+		gap: "20px",
   },
   ".cta": {
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
     flexDirection: "column",
+		"h2": {
+			fontSize: "$3",
+			fontWeight: "$normal",
+			paddingBottom: "16px",
+			margin: "0px",
+		},
+		"p": {
+			fontSize: "$4",
+			color: "$grey400",
+			margin: "0px",
+			paddingBottom: "32px",
+		}
   },
 });
 

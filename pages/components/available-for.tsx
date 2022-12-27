@@ -1,25 +1,45 @@
 import { styled } from "../../stitches.config.ts";
-
 import { ResponsiveContainer } from "../components/responsive-container";
 import { Box } from "../components/box";
-
 import { MacOSIcon } from "./../assets/macos";
 
 const AvailableForStyles = styled({
   alignItems: "center",
   display: "flex",
+  marginBottom: "96px",
   ".available-content": {
+    backgroundColor: "$grey100",
+    padding: "16px 20px",
+    borderRadius: "4px",
     p: {
       display: "block",
-      fontSize: "$5",
+      fontSize: "$6",
       color: "$grey200",
       textAlign: "center",
+      paddingBottom: "20px",
     },
     ul: {
       alignItems: "center",
       display: "flex",
       justifyContent: "center",
-      gap: "30px",
+      gap: "40px",
+    },
+    "ul li": {
+      listStyle: "none",
+    },
+    "ul li": {
+      alignItems: "center",
+      display: "flex",
+      justifyContent: "center",
+      span: {
+        color: "$grey400",
+        fontSize: "$6",
+      },
+      svg: {
+        width: "20px",
+        height: "20px",
+        marginRight: "10px",
+      },
     },
   },
 });

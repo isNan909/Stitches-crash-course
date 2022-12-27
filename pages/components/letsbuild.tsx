@@ -13,6 +13,7 @@ const LetsBuild = styled({
     display: "flex",
     justifyContent: "center",
     textAlign: "center",
+		padding: "96px 0px",
   },
   ".build-circles": {
     position: "absolute",
@@ -20,24 +21,39 @@ const LetsBuild = styled({
     top: "0",
   },
   ".build-heading": {
+    margin: "auto",
     h2: {
       fontSize: "$2",
       fontWeight: "$normal",
     },
     p: {
-      fontSize: "$3",
+      fontSize: "$4",
       maxWidth: "536px",
       lineHeight: "28px",
       color: "$grey400",
+			margin: "auto",
     },
+  },
+  ".build-networks": {
+    display: "grid",
+    gridTemplateColumns: "1fr 2fr",
+    gridTemplateRows: "1fr",
+    gridColumnGap: "5px",
+    gridRowGap: "5px",
+    alignItems: "center",
+		paddingBottom: "0px 32px",
   },
   ".build-logos": {
     display: "flex",
     alignItems: "center",
-    gap: "30px",
     justifyContent: "center",
+		paddingTop: "48px",
+		paddingBottom: "32px",
     ul: {
-      display: "flex",
+      listStyle: "none",
+			display: "flex",
+			alignItems: "center",
+			gap: "30px",
     },
     "ul li": {
       listStyle: "none",
@@ -57,6 +73,33 @@ const LetsBuild = styled({
         width: "50px",
         height: "30px",
       },
+    },
+  },
+  ".build-networks__tabs": {
+    justifyContent: "start",
+    display: "flex",
+    "ul li": {
+      listStyle: "none",
+      textAlign: "left",
+      margin: "40px 0px",
+      padding: "0px 0px 0px 20px",
+    },
+    "li.active": {
+      borderLeft: "3px solid $orangeDark",
+			h4: {
+        color: "$orangeDark",
+      },
+    },
+    "li:not(.active)": {
+      borderLeft: "3px solid $grey100",
+    },
+    h4: {
+      fontSize: "$4",
+      fontWeight: "$normal",
+    },
+    p: {
+      fontColor: "$grey400",
+      fontSize: "$6",
     },
   },
 });
@@ -100,7 +143,7 @@ export default function LetsBuildSection() {
             <div className="build-networks">
               <div className="build-networks__tabs">
                 <ul>
-                  <li>
+                  <li className="active">
                     <h4>With Tailscale</h4>
                     <p>
                       Rolls out in minutes. Devices connect directly, working
@@ -120,7 +163,7 @@ export default function LetsBuildSection() {
               </div>
               <div className="build-networks__diagram">
                 <img
-                  src="https://tailscale.com/files/images/marketing/home-network-before.svg"
+                  src="https://tailscale.com/files/images/marketing/home-network-after.svg"
                   alt="before tailscale"
                 />
               </div>
