@@ -33,7 +33,7 @@ export const Button = styled("button", {
       },
       outline: {
         backgroundColor: "$whiteColor",
-        border: "1px solid $grey300",
+        border: "1px solid $grey200",
         color: "$grey300",
         "&:hover": {
           backgroundColor: "$whiteColor",

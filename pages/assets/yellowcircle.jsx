@@ -1,7 +1,6 @@
 export const YellowCircle = () => {
   return (
     <svg
-      class="w-full h-auto"
       width="169"
       height="673"
       viewBox="0 0 169 673"

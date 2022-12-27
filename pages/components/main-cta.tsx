@@ -2,49 +2,34 @@ import { styled } from "../../stitches.config.ts";
 
 import { ResponsiveContainer } from "../components/responsive-container";
 import { Button } from "../components/buttons";
-// import { Box } from "../components/box";
+import { Box } from "../components/box";
 
-const BannerSection = styled({
-  ".banner": {
-    margin: "90px 0px",
-		"h1": {
-			fontSize: "$1",
-			margin: "0",
-			fontWeight: "$normal"
-		},
-		"p": {
-			fontSize: "$3",
-			color: "$grey300",
-			padding: "16px 40px 40px 0px",
-			margin: "0px",
-			maxWidth: "42rem",
-			lineHeight: "1.75rem"
-		},
-  },
-  ".banner-buttons": {
-    gap: "20px",
-  },
-  ".banner, .banner-buttons": {
+const MainActionStyles = styled({
+  backgroundColor: "$White",
+  margin: "auto",
+  textAlign: "center",
+  ".cta-buttons": {
     display: "flex",
     alignItems: "center",
-    textAlign: "center",
     justifyContent: "center",
+  },
+  ".cta": {
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    flexDirection: "column",
   },
 });
 
-export default function Mainbanner() {
+export default function MainAction() {
   return (
-    <ResponsiveContainer>
-      <BannerSection>
-        <div className="banner">
-          <header>
-            <h1>Tailscale makes networking easy</h1>
-            <p>
-              Tailscale lets you easily manage access to private resources,
-              quickly SSH into devices on your network, and work securely from
-              anywhere in the world.
-            </p>
-            <div className="banner-buttons">
+    <MainActionStyles>
+      <ResponsiveContainer>
+        <section>
+          <Box className="cta">
+            <h2>Get started for free</h2>
+            <p>Try Tailscale out for free on your own devices.</p>
+            <div className="cta-buttons">
               <Button size="md" bg="primary">
                 Use Tailscale for free
               </Button>
@@ -63,9 +48,9 @@ export default function Mainbanner() {
                 </svg>
               </Button>
             </div>
-          </header>
-        </div>
-      </BannerSection>
-    </ResponsiveContainer>
+          </Box>
+        </section>
+      </ResponsiveContainer>
+    </MainActionStyles>
   );
 }

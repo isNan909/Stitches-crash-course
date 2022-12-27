@@ -14,7 +14,7 @@ const HeroImage = styled({
 	".image-device_circles": {
 		position: "absolute",
 		left: "-15%",
-		translate: "0 50%"
+		translate: "0 20%"
 	}
 });
 

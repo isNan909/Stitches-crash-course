@@ -3,7 +3,11 @@ import Head from "next/head";
 import Navbar from "../pages/components/navbar";
 import Mainbanner from "../pages/components/main-banner";
 import TeamsBox from "../pages/components/teams";
-import Heroimage from "../pages/components/heroimage"
+import Heroimage from "../pages/components/heroimage";
+import LetsBuildSection from "../pages/components/letsbuild";
+import AvailableFor from "../pages/components/available-for";
+import IdentityProvidersSection from "../pages/components/identity-providers";
+import MainAction from "../pages/components/main-cta";
 
 export default function Home() {
   return (
@@ -19,6 +23,10 @@ export default function Home() {
         <Mainbanner />
         <TeamsBox />
         <Heroimage />
+        <LetsBuildSection />
+        <AvailableFor />
+        <IdentityProvidersSection />
+        <MainAction />
       </main>
     </>
   );
