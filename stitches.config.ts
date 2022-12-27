@@ -61,6 +61,7 @@ export const globalStyles = globalCss({
     margin: 0,
   },
   "ul[role='list'], ol[role='list']": { listStyle: "none" },
+  "ul": {margin: "0px", padding: "0px"},
   "html:focus-within": { scrollBehavior: "smooth" },
   body: {
     fontFamily: "Inter",

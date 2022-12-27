@@ -9,14 +9,14 @@ const AvailableForStyles = styled({
   marginBottom: "96px",
   ".available-content": {
     backgroundColor: "$grey100",
-    padding: "16px 20px",
+    padding: "30px",
     borderRadius: "4px",
     p: {
       display: "block",
       fontSize: "$6",
       color: "$grey200",
       textAlign: "center",
-      paddingBottom: "20px",
+      paddingBottom: "30px",
     },
     ul: {
       alignItems: "center",

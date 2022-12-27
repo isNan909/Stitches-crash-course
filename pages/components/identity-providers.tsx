@@ -20,8 +20,12 @@ const IdentityProviders = styled({
     h2: {
       fontSize: "$2",
       fontWeight: "$normal",
+      paddingBottom: "16px",
       "@md": {
         fontSize: "$3",
+      },
+      "@sm": {
+        fontSize: "$4",
       },
     },
     p: {

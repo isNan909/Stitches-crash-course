@@ -27,12 +27,14 @@ const MainActionStyles = styled({
 			fontWeight: "$normal",
 			paddingBottom: "16px",
 			margin: "0px",
+      "@sm": { fontSize: "$4" },
 		},
 		"p": {
 			fontSize: "$4",
 			color: "$grey400",
 			margin: "0px",
 			paddingBottom: "32px",
+      "@sm": { fontSize: "$5" },
 		}
   },
 });

@@ -34,8 +34,12 @@ const LetsBuild = styled({
     h2: {
       fontSize: "$2",
       fontWeight: "$normal",
+      paddingBottom: "16px",
       "@md": {
         fontSize: "$3",
+      },
+      "@sm": {
+        fontSize: "$4",
       },
     },
     p: {
@@ -97,11 +101,11 @@ const LetsBuild = styled({
     justifyContent: "start",
     display: "flex",
     ul: {
+      flex: "1",
+      padding: "0px",
+      margin: "0px",
       "@md": {
         display: "flex",
-      },
-      "@sm": {
-        flexWrap: "wrap",
       },
     },
     "ul li": {
@@ -112,26 +116,47 @@ const LetsBuild = styled({
       "@md": {
         padding: "0px 20px 0px 20px",
       },
+      "@sm": {
+        flex: "1",
+      },
     },
     "li.active": {
       borderLeft: "3px solid $orangeDark",
       h4: {
         color: "$orangeDark",
       },
+      "@sm": {
+        borderLeft: "none",
+        borderTop: "3px solid $orangeDark",
+      },
     },
     "li:not(.active)": {
       borderLeft: "3px solid $grey100",
+      "@sm": {
+        borderLeft: "none",
+        borderTop: "3px solid $grey100",
+      },
     },
     h4: {
       fontSize: "$4",
       fontWeight: "$normal",
       margin: "0px",
       paddingBottom: "5px",
+      "@sm": {
+        paddingTop: "15px",
+        fontSize: "$5",
+      },
+      "@xs": {
+        fontSize: "$6",
+      },
     },
     p: {
       fontSize: "$6",
       lineHeight: "28px",
       color: "$grey400",
+      "@sm": {
+        display: "none",
+      },
     },
   },
   ".build-networks__diagram": {
